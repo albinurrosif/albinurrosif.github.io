@@ -14,7 +14,6 @@
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portofolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closeMenu()"></i>
@@ -40,10 +39,10 @@
           <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In a ratione nesciunt consequuntur, nemo non corrupti tempore tempora corporis. Facere consequatur distinctio repellat magnam, optio sint ex amet, ut pariatur mollitia
-              laborum exercitationem. Aliquid nesciunt perferendis, ex quidem sint tempora est voluptates maiores soluta saepe in itaque ab voluptatum iusto?
+              Hello, I'm Albi. I am a D3 Informatics Engineering at Surabaya Electronics Polytechnic. I am interested in web development and also Android. I learned both things from lectures and also learned them autodidactically from
+              online learning websites, YouTube, and also free online courses
             </p>
-            <div class="tab-titles">
+            <!-- <div class="tab-titles">
               <p class="tab-links active-link" onclick="openTab('skills')">Skill</p>
               <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
               <p class="tab-links active-link" onclick="openTab('education')">Education</p>
@@ -68,34 +67,31 @@
                 <li><span>Lorem.</span><br />Lorem ipsum dolor sit amet.</li>
                 <li><span>Lorem, ipsum dolor.</span><br />Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
 
     <!-- ------- Services ------- -->
-    <div id="services">
+    <div id="learning">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
+        <h1 class="sub-title">Learning</h1>
+        <div class="learning-list">
           <div>
             <i class="fas fa-code"></i>
-            <h2>Web Design</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, error!</p>
-            <a href="#">Learn more</a>
+            <h2>Web Development</h2>
+            <p>I start learning coding from web, I am stil far from what i want to be but will continue learning a new things</p>
           </div>
           <div>
             <i class="fas fa-crop-alt"></i>
             <h2>UI/UX Design</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, error!</p>
-            <a href="#">Learn more</a>
           </div>
           <div>
             <i class="fab fa-app-store"></i>
-            <h2>App Design</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, error!</p>
-            <a href="#">Learn more</a>
+            <h2>Android Development</h2>
+            <p>I learn android from lectures</p>
           </div>
         </div>
       </div>
@@ -109,25 +105,41 @@
           <div class="work">
             <img src="images/1.png" alt="" />
             <div class="layer">
-              <h3>Lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sapiente natus a omnis aliquid error?</p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <h3>Submission Belajar Pemrograman web</h3>
+              <p>My very first own website which i made with html, native css, and a little bit javascript</p>
+              <a href="https://albinurrosif.github.io/Submission-Dicoding-belajar-pemrograman-web/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
           <div class="work">
             <img src="images/2.png" alt="" />
             <div class="layer">
-              <h3>Lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sapiente natus a omnis aliquid error?</p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <h3>Submission Belajar membuat frontend web pemula</h3>
+              <p>membuat sebuah website yang menerapkan teknik manipulasi DOM dan web storage</p>
+              <a href="https://albinurrosif.github.io/Submission-Dicoding-Belajar-membuat-front-end-web-untuk-pemula/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
           <div class="work">
             <img src="images/3.png" alt="" />
             <div class="layer">
-              <h3>Lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sapiente natus a omnis aliquid error?</p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <h3>Tugas akhir semester 1</h3>
+              <p>Membuat tampilan web dengan html dan css lalu diupload ke github</p>
+              <a href="https://albinurrosif.github.io/ProjekUAS/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/3.png" alt="" />
+            <div class="layer">
+              <h3>Tugas akhir semester 1</h3>
+              <p>Membuat tampilan web dengan html dan css lalu diupload ke github</p>
+              <a href="https://albinurrosif.github.io/ProjekUAS/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/3.png" alt="" />
+            <div class="layer">
+              <h3>Tugas akhir semester 1</h3>
+              <p>Membuat tampilan web dengan html dan css lalu diupload ke github</p>
+              <a href="https://albinurrosif.github.io/ProjekUAS/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
         </div>
@@ -135,7 +147,7 @@
       </div>
     </div>
 
-    <!-- ------- Portfolio ------- -->
+    <!-- ------- Contact ------- -->
     <div id="contact">
       <div class="container">
         <div class="row">
@@ -208,6 +220,35 @@
             form.reset();
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const portfolioItems = document.querySelectorAll('.work');
+        const seeMoreBtn = document.querySelector('.btn');
+
+        // Hide additional portfolio items initially
+        portfolioItems.forEach(function (item, index) {
+          if (index >= 3) {
+            item.style.display = 'none';
+          }
+        });
+
+        // Toggle visibility of additional portfolio items when "See more" button is clicked
+        seeMoreBtn.addEventListener('click', function (event) {
+          event.preventDefault();
+
+          portfolioItems.forEach(function (item, index) {
+            if (index >= 3) {
+              item.style.display = item.style.display === 'none' ? 'block' : 'none';
+            }
+          });
+
+          // Change button text based on current state
+          const btnText = seeMoreBtn.querySelector('span');
+          btnText.textContent = btnText.textContent === 'See more' ? 'See less' : 'See more';
+        });
       });
     </script>
 
