@@ -224,7 +224,7 @@
     </script>
 
     <script>
-            document.addEventListener('DOMContentLoaded', function () {
+      document.addEventListener('DOMContentLoaded', function () {
         const portfolioItems = document.querySelectorAll('.work');
         const seeMoreBtn = document.querySelector('.btn');
         const additionalPortfolioItems = Array.from(portfolioItems).slice(3); // Mengambil portofolio tambahan setelah index ke-3
@@ -248,32 +248,6 @@
           btnText.textContent = btnText.textContent === 'See more' ? 'See less' : 'See more';
         });
       });
-
-              const portfolioItems = document.querySelectorAll('.work');
-              const seeMoreBtn = document.querySelector('.btn');
-
-              // Hide additional portfolio items initially
-              portfolioItems.forEach(function (item, index) {
-                if (index >= 3) {
-                  item.style.display = 'none';
-                }
-              });
-
-              // Toggle visibility of additional portfolio items when "See more" button is clicked
-              seeMoreBtn.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                portfolioItems.forEach(function (item, index) {
-                  if (index >= 3) {
-                    item.style.display = item.style.display === 'none' ? 'block' : 'none';
-                  }
-                });
-
-                // Change button text based on current state
-                const btnText = seeMoreBtn.querySelector('span');
-                btnText.textContent = btnText.textContent === 'See more' ? 'See less' : 'See more';
-              });
-            });
     </script>
 
     <script src="https://kit.fontawesome.com/bf59896b49.js" crossorigin="anonymous"></script>
