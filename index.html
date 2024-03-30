@@ -224,32 +224,56 @@
     </script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('DOMContentLoaded', function () {
         const portfolioItems = document.querySelectorAll('.work');
         const seeMoreBtn = document.querySelector('.btn');
+        const additionalPortfolioItems = Array.from(portfolioItems).slice(3); // Mengambil portofolio tambahan setelah index ke-3
 
-        // Hide additional portfolio items initially
-        portfolioItems.forEach(function (item, index) {
-          if (index >= 3) {
-            item.style.display = 'none';
-          }
+        // Menyembunyikan portofolio tambahan secara default
+        additionalPortfolioItems.forEach(function (item) {
+          item.style.display = 'none';
         });
 
-        // Toggle visibility of additional portfolio items when "See more" button is clicked
+        // Menangani klik tombol "See more"
         seeMoreBtn.addEventListener('click', function (event) {
           event.preventDefault();
 
-          portfolioItems.forEach(function (item, index) {
-            if (index >= 3) {
-              item.style.display = item.style.display === 'none' ? 'block' : 'none';
-            }
+          // Toggle visibility of additional portfolio items
+          additionalPortfolioItems.forEach(function (item) {
+            item.style.display = item.style.display === 'none' ? 'block' : 'none';
           });
 
-          // Change button text based on current state
+          // Ubah teks tombol berdasarkan status saat ini
           const btnText = seeMoreBtn.querySelector('span');
           btnText.textContent = btnText.textContent === 'See more' ? 'See less' : 'See more';
         });
       });
+
+              const portfolioItems = document.querySelectorAll('.work');
+              const seeMoreBtn = document.querySelector('.btn');
+
+              // Hide additional portfolio items initially
+              portfolioItems.forEach(function (item, index) {
+                if (index >= 3) {
+                  item.style.display = 'none';
+                }
+              });
+
+              // Toggle visibility of additional portfolio items when "See more" button is clicked
+              seeMoreBtn.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                portfolioItems.forEach(function (item, index) {
+                  if (index >= 3) {
+                    item.style.display = item.style.display === 'none' ? 'block' : 'none';
+                  }
+                });
+
+                // Change button text based on current state
+                const btnText = seeMoreBtn.querySelector('span');
+                btnText.textContent = btnText.textContent === 'See more' ? 'See less' : 'See more';
+              });
+            });
     </script>
 
     <script src="https://kit.fontawesome.com/bf59896b49.js" crossorigin="anonymous"></script>
