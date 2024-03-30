@@ -192,13 +192,13 @@ nav ul li a:hover::after {
   margin-bottom: 15px;
 }
 
-.learning-list div a {
+/* .learning-list div a {
   text-decoration: none;
   color: #ece8e1;
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
-}
+} */
 .learning-list div:hover {
   background: #ff4655;
   transform: translateY(-10px);
